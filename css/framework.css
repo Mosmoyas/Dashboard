@@ -1,4 +1,18 @@
-/* start Box */
+/*Start Root***********************************************************/
+:root {
+    --fontStyleFamily: "Font Awesome 6 Free";
+    --transition-time: 0.3s;
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --grey-light-color: #ccc;
+}
+
+/*End Root*/
+/* start Box ************************************************************/
 .d-flex {
     display: flex;
 }
@@ -7,10 +21,28 @@
     align-items: center;
 }
 
+.d-grid {
+    display: grid;
+}
+
+.gap-20 {
+    gap: 20px
+}
+
+@media (max-width:767px) {
+    .block-mobile {
+        display: block;
+    }
+}
+
 /* End Box */
-/*Start Padding + Margin */
+/*Start Padding + Margin ************************************************************/
 .p-10 {
     padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
 }
 
 .p-20 {
@@ -25,7 +57,18 @@
     margin-top: 0;
 }
 
-/*End Padding + Margin */
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+
+
+
+/*End Padding + Margin ************************************************************/
 /* Start Colors*/
 
 .bg-white {
@@ -36,15 +79,20 @@
     color: black;
 }
 
+
 /* End Colors*/
 
-/*  Start Position*/
+/*  Start Position************************************************************/
 .p-relative {
     position: relative;
 }
 
+.overflow-h {
+    overflow: hidden;
+}
+
 /*  End Position*/
-/*Start Fonts*/
+/*Start Fonts************************************************************/
 .txt-c {
     text-align: center;
 }
@@ -53,14 +101,40 @@
     font-size: 14px;
 }
 
+@media (max-width:767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
+}
+
+block-mobile
 /*End Fonts*/
 
-/*Start Border*/
+/*Start Border************************************************************/
 .rad-6 {
     border-radius: 6px;
 }
 
+.rad-10 {
+    border-radius: 10px;
+}
+
 /* End Border */
+/*Start Components************************************************************/
+.between-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*End Components*/
+/*Start WIdth +height************************************************************/
+.w-full {
+    width: 100%;
+}
+
+/*End WIdth +height*/
+
 
 /*Start Media*/
 /* @media (max-width:767px) {
