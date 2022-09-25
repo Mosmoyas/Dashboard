@@ -196,7 +196,7 @@ ul {
     top: -5px;
 }
 
-.content img {
+.content img.hd-avatar {
     width: 32px;
     height: 32px;
     margin-left: 15px;
@@ -216,6 +216,245 @@ ul {
     }
 }
 
-.wrapper .welcome {}
-
 /*End Content*/
+/*Start Welcome Widget*/
+.welcome {
+    overflow: hidden;
+}
+
+.welcome .intro img {
+    width: 200px;
+    /* margin-bottom: -10px; */
+    border-radius: 6px;
+
+}
+
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ddd;
+    border: 2px solid white;
+    margin-top: -32px;
+    margin-left: 20px;
+
+}
+
+
+.welcome .body {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.welcome .body>div {
+    flex: 1;
+}
+
+.welcome .visit {
+    margin: 0 15px 15px auto;
+    transition: .3px;
+}
+
+.welcome .visit:hover {
+    background-color: var(--blue-alt-color);
+}
+
+@media (max-width:767px) {
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+
+    .welcome .avatar {
+        margin-left: 0;
+    }
+
+    .welcome .body>div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+/*End Welcome Widget*/
+
+
+/*Start Quick-draft Widget*/
+.quick-draft textarea {
+    resize: none;
+    min-height: 180px;
+}
+
+.quick-draft .save {
+    margin-left: auto;
+    cursor: pointer;
+    transition: var(--transition-time);
+}
+
+.quick-draft .save:hover {
+    background-color: var(--blue-alt-color);
+}
+
+/*Start Quick-draft Widget*/
+/* start Targets */
+.targets .target-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.targets .details {
+    flex: 1;
+}
+
+.targets .details .progress {
+    height: 4px;
+}
+
+.targets .details .progress>span {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.targets .details .progress>span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    color: white;
+    padding: 2px 6px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.targets .details .progress>span span::after {
+    content: "";
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.targets .details .progress>.blue span::after {
+    border-top-color: var(--blue-color);
+}
+
+.targets .details .progress>.orange span::after {
+    border-top-color: var(--orange-color);
+}
+
+.targets .details .progress>.green span::after {
+    border-top-color: var(--green-color);
+}
+
+
+.blue .icon,
+.blue .progress {
+    background-color: rgb(0 117 255 /20%);
+}
+
+.orange .icon,
+.orange .progress {
+    background-color: rgb(245 158 11 /20%);
+}
+
+.green .icon,
+.green .progress {
+    background-color: rgb(34 197 94 /20%);
+}
+
+/* .targets .details .progress>span span {} */
+
+
+/* End Targets */
+
+/* Start tickets widget */
+.tickets .box {
+    border: 1PX solid var(--grey-light-color);
+    width: calc(50% - 10px);
+}
+
+
+@media (max-width:767px) {
+    .tickets .box {
+        width: 100%;
+    }
+
+}
+
+/* End tickets widget */
+
+/* Start Latest-News widget  */
+
+
+.latest-news .news-line:not(:last-of-type) {
+    border-bottom: 1px solid var(--grey-light-color);
+
+}
+
+.latest-news img {
+    width: 100px;
+    min-height: 70px;
+}
+
+.latest-news .info {
+    flex-grow: 1;
+}
+
+.latest-news .date {
+    width: 100px;
+    padding: 3px 8px;
+}
+
+@media (max-width:767px) {
+    .latest-news .news-line {
+        display: block;
+    }
+
+    .latest-news .news-line .date {
+        width: fit-content;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* End Latest News Widget */
+
+/* Start Latest Tasks Widget */
+.latest-tasks .task-row:not(:last-of-type) {
+    border-bottom: 1px solid var(--grey-light-color);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.latest-tasks .info {
+    flex-grow: 1;
+}
+
+.latest-tasks .done {
+    opacity: 0.3;
+}
+
+.latest-tasks .done h3,
+.latest-tasks .done p {
+    text-decoration: line-through;
+}
+
+.latest-tasks .delete {
+    cursor: pointer;
+
+    transition: var(--transition-time);
+}
+
+.latest-tasks .delete:hover {
+    color: var(--red-color);
+}
+
+.latest-tasks .task-row.done .delete:hover {
+    color: grey;
+    opacity: 1;
+}
+
+/* End Latest Tasks Widget */
