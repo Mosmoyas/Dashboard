@@ -682,6 +682,59 @@ ul {
 
 /* <!-- End Settings page  --> */
 
+.security-box {
+    padding-bottom: 15px;
+}
+
+.security-box:not(:last-child) {
+    border-bottom: 1px solid #eee
+}
+
+/* <!-- Start Genral Info   --> */
+.general-info .email {
+    display: inline-flex !important;
+    width: 80% !important;
+}
+
+/* <!-- End Genral Info   --> */
+
+/* <!-- Start Social Media Settings --> */
+.setting-page .social-boxes i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: .3s;
+    border: 1px solid #ddd;
+}
+
+.setting-page .social-boxes input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+
+    padding-left: 15px;
+    border-radius: 0 6px 6px 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.setting-page .social-boxes>div:focus-within i {
+    color: black;
+    font-size: 19px;
+    transform: skewX();
+    border: none;
+    border-bottom: 1px solid #ddd;
+
+
+
+}
+
+
+/* <!-- Emd Social Media Settings --> */
+
 
 
 /* Start Animation Widget */

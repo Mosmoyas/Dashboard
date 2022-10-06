@@ -281,6 +281,9 @@
 /*End Fonts*/
 
 /*Start Border************************************************************/
+.b-ccc {
+    border: 1px solid #ccc;
+}
 
 .rad-6 {
     border-radius: 6px;
@@ -357,6 +360,7 @@
 .toggle-checkbox {
     -webkit-appearance: none;
     appearance: none;
+    display: none;
 }
 
 .toggle-checkbox:checked+.toggle-switch {
@@ -372,6 +376,11 @@
 
 
 /*----End------------on/off---------------*/
+.disable {
+    background-color: rgba(192, 192, 192, 0.4);
+    cursor: no-drop;
+    color: rgb(164, 164, 164);
+}
 
 /*End Components*/
 /*Start WIdth +height************************************************************/
