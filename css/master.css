@@ -679,6 +679,67 @@ ul {
     min-height: 150px;
 }
 
+/*----Start------------on/off---------------*/
+
+
+
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    font-family: var(--fontStyleFamily);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    transition: .3s;
+
+}
+
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background-color: var(--blue-color);
+
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+
+
+/*----End------------on/off---------------*/
+.disable {
+    background-color: rgba(192, 192, 192, 0.4);
+    cursor: no-drop;
+    color: rgb(164, 164, 164);
+}
+
+/*End Components*/
+/*Start WIdth +height************************************************************/
+
 
 /* <!-- End Settings page  --> */
 
@@ -705,8 +766,9 @@ ul {
     background-color: #f6f6f6;
     border-right: none;
     border-radius: 6px 0 0 6px;
-    transition: .3s;
+    transition: 1s;
     border: 1px solid #ddd;
+    position: relative;
 }
 
 .setting-page .social-boxes input {
@@ -724,16 +786,75 @@ ul {
 .setting-page .social-boxes>div:focus-within i {
     color: black;
     font-size: 19px;
-    transform: skewX();
+    transform: rotate(-360deg) scale(1.1);
+    left: -3px;
     border: none;
     border-bottom: 1px solid #ddd;
+}
 
+/* <!-- Emd Social Media Settings --> */
+/* Start Widgets Control */
+.widgets-control .control input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.widgets-control .control label {
+    position: relative;
+    padding-left: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.widgets-control .control label::before,
+.widgets-control .control label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    font-size: 12px;
+    transition: 0.3s;
 
 
 }
 
+.widgets-control .control label::before {
 
-/* <!-- Emd Social Media Settings --> */
+    content: "";
+    height: 14px;
+    width: 14px;
+    border: 2px solid var(--grey-color);
+
+}
+
+.widgets-control .control label:hover:before {
+    border-color: var(--blue-alt-color);
+}
+
+.widgets-control .control input:checked+label::before {
+    background-color: var(--blue-color);
+}
+
+.widgets-control .control label::after {
+    font-family: var(--fontStyleFamily);
+    content: "\f00c";
+    font-weight: 900;
+    color: white;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg)
+}
+
+.widgets-control .control input:checked+label::after {
+    transform: scale(1);
+}
+
+/* End Widgets Control */
+
 
 
 
