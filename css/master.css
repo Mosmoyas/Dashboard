@@ -821,7 +821,6 @@ ul {
 }
 
 .widgets-control .control label::before {
-
     content: "";
     height: 14px;
     width: 14px;
@@ -840,6 +839,7 @@ ul {
 .widgets-control .control label::after {
     font-family: var(--fontStyleFamily);
     content: "\f00c";
+
     font-weight: 900;
     color: white;
     width: 18px;
@@ -847,7 +847,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0) rotate(360deg)
+    transition: .3s;
+    /* transform: scale(0) rotate(360deg); */
+    /* transform: rotate(360deg); */
+
 }
 
 .backup-control .control input:checked+label::after {
@@ -947,6 +950,61 @@ ul {
 }
 
 /* End backup Backup */
+/*End Settings Page*/
+/*---------------------------------------------------------- Profile Page--------------------*/
+
+/* Start Profile Page  */
+
+
+.profile-page .avatar-box {
+    width: 300px;
+}
+
+@media (min-width:768px) {
+    .profile-page .avatar-box {
+        border-right: 1px solid #ddd;
+    }
+
+}
+
+@media (max-width:767px) {
+    .profile-page .overview {
+        justify-content: center;
+
+    }
+
+    .profile-page .avatar-box {
+        flex-direction: column;
+    }
+
+}
+
+.profile-page .avatar-box>img {
+    width: 120px;
+    height: 120px;
+}
+
+.profile-page .avatar-box .level {
+    height: 6px;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+}
+
+.profile-page .avatar-box .level span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--blue-color);
+    height: 100%;
+    border-radius: 6px;
+}
+
+
+
+
+/* End Profile Page  */
+
 
 
 
