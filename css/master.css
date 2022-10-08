@@ -949,6 +949,38 @@ ul {
 
 }
 
+@media (max-width:767px) {
+    .profile-page .toggle-switch {
+        margin: auto;
+
+    }
+}
+
+
+.profile-page .toggle-switch {
+    height: 20px;
+
+}
+
+.profile-page .toggle-checkbox:checked+.toggle-switch::before {
+    left: 48px;
+
+}
+
+.profile-page .toggle-switch::before {
+
+    width: 20;
+    height: 14px;
+    font-size: 8px;
+
+}
+
+
+
+
+
+
+/*----End------------on/off---------------*/
 /* End backup Backup */
 /*End Settings Page*/
 /*---------------------------------------------------------- Profile Page--------------------*/
@@ -973,7 +1005,7 @@ ul {
 
     }
 
-    .profile-page .avatar-box {
+    .profile-page .overview {
         flex-direction: column;
     }
 
@@ -1002,6 +1034,32 @@ ul {
 
 
 
+/****/
+
+.profile-page .info-box .box {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-page .info-box .box:hover {}
+
+.profile-page .info-box .box>div {
+    min-width: 250px;
+    padding-top: 15px;
+}
+
+@media (min-width:768px) {
+    .profile-page .info-box .box>div {
+        min-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .profile-page .info-box .box h4 {
+        margin-bottom: 15px;
+
+    }
+
+}
 
 /* End Profile Page  */
 
