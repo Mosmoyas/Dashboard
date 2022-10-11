@@ -9,6 +9,8 @@
     --red-color: #f44336;
     --grey-color: #888;
     --grey-light-color: #ccc;
+    --mobile: 767px;
+    --maxWdith: var(--mobile)
 }
 
 /*End Root*/
@@ -53,6 +55,11 @@
 
 /* End Box */
 /*Start Padding + Margin ************************************************************/
+.p-5 {
+    padding: 10px;
+}
+
+
 .p-10 {
     padding: 10px;
 }
@@ -129,6 +136,10 @@
 
 .mt-10 {
     margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
 }
 
 .mt-20 {
@@ -349,6 +360,14 @@
 
 .h-full {
     height: 100%;
+}
+
+.h-100 {
+    height: 100px;
+}
+
+.w-100 {
+    width: 100px;
 }
 
 /*End WIdth +height*/
