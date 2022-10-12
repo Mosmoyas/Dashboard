@@ -72,6 +72,10 @@
     padding: 20px;
 }
 
+.pt-10 {
+    padding-top: 10px;
+}
+
 .pt-15 {
     padding-top: 15px;
 }
@@ -267,6 +271,10 @@
     position: relative;
 }
 
+.p-absolute {
+    position: absolute;
+}
+
 .overflow-h {
     overflow: hidden;
 }
@@ -329,6 +337,10 @@
 
 .b-none {
     border: none;
+}
+
+.border-eee {
+    border: 1px solid #eee;
 }
 
 /* End Border */
